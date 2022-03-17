@@ -8,6 +8,11 @@ public class TicketOffice
 {
     public Reservation MakeReservation(ReservationRequest request)
     {
+        if (request is null)
+        {
+            throw new ArgumentNullException(nameof(request));
+        }
+
         //TODO: implement this code!
         throw new NotImplementedException();
     }
